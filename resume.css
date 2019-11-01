@@ -1,0 +1,557 @@
+body
+{
+	font-style: sans-serif;
+	margin: 0px;
+	font-size: 30px;
+}
+#body-header
+{
+	background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+	height: 65vh;
+	background-attachment: fixed;
+	padding-top: 1.2rem;
+	opacity: 0.8;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	opacity: 0.8;
+}
+
+/*Horizontal-list*/
+
+.bars
+{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+    text-align: right;
+    left: 90%;
+}
+
+.bars i
+{
+    font-size: 2rem;
+}
+.dropdown-list
+{
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+.dropdown-list ul
+{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem; 
+}
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+.dropdown-list li
+{
+    margin: 0.4rem 0px;
+}
+
+.style0{
+    list-style: none;
+}
+
+.style0 li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.style0 li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.horizontal-list
+{
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+}
+.horizontal-list li
+{
+	display: inline-block;
+	margin: 0px 8px 8px 0px;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+.horizontal-list li a
+{
+	color: white;
+	text-decoration: none;
+}
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+@media only screen and (max-width: 572px) 
+{
+.bars {
+        display: block;
+    }
+}
+@media only screen and (max-width: 572px) 
+{
+    .horizontal-list
+    {
+        display: none;
+    }
+}
+/*Name Social Icom*/
+
+#name-social-container
+{
+	margin-top:20vh;
+}
+
+#my-name
+{
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+	color: white;
+	margin-bottom: 0.5rem;
+	font-weight: 700;
+}
+
+
+.social-icons li a i 
+{
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    color: white;
+}
+
+.social-icons li a i:hover 
+{
+    box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.3);
+}
+
+/*about*/
+#about
+{
+	height: auto;
+	width: 100%;
+	margin-bottom: 30px;
+}
+#my-image
+{
+	height: 12rem;
+	width: 12rem;
+	margin: auto;
+	margin-top: -17vh;
+	position: relative;
+}
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+#about-para
+{
+	padding: 10px;
+	width: 75%;
+	text-align: justify;
+	line-height: 28px;
+	font-size: 1.1rem;
+	margin: auto;
+}
+
+/*Section Class*/
+
+section
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 20px;
+}
+
+section:nth-child(2n)
+{
+	background-color: #9e9b9b29;
+
+}
+section:nth-child(2n+1)
+{
+	background-color: white;
+}
+
+.section-heading
+{
+	width: auto;
+	font-weight: 400;
+	padding: 20px 10px 10px;
+	margin-bottom: 75px;
+}
+.section-heading span
+{
+	color: #2857a4;
+	font-size: 40px;
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: 0.5rem;
+}
+
+/*Skills section*/
+
+.skills-display
+{
+	width: 75%;
+	/*border: 2px solid black;*/
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 30px;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+.skills-progress
+{
+	/*border: 2px solid black;*/
+	display: inline-block;
+	margin: 25px;
+	background-color: lightgrey;
+	border-radius: 1rem; 
+	overflow: hidden;
+	box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+	width: 11rem;
+    height: 2.2rem;
+}
+
+.fifty-per
+{
+	background-color: red;
+	width: 50%;
+	height: inherit;  
+}
+.seventy-five-per
+{
+	background-color: blue;
+	width: 75%;
+	height: inherit;
+	
+}
+.eigthy-per
+{
+	background-color: green;
+	width: 80%;
+	height: inherit;
+}
+.skill-name span
+{
+	color: white;
+	vertical-align: middle;
+	margin-left: 10px;
+	font-size: 1rem;
+}
+
+
+/*Portfolio*/
+
+.portfolio-display
+{
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 50px;
+	margin-bottom: 20px;
+	justify-content: space-around;
+}
+.portfolio-image-container 
+{
+	max-width: 300px;
+	overflow: hidden;
+	margin: 30px;
+	background-size: cover;
+	position: relative;
+	background-repeat: no-repeat;
+}
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    color: white;
+}
+
+/*Contacts*/
+
+#contact
+{
+	background-color: #0abcf9;
+	background-image: linear-gradient(50deg,blue,purple);
+	color: white;
+	padding-bottom: 40px;
+}
+#contact h1 span
+{
+	color: white;
+}
+
+#contact-form
+{
+	margin-left: 20%;
+}
+#contact-container
+{
+	display: flex;
+}
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+/*Responsive Contact*/
+@media screen and (max-width: 600px)
+{
+    #contact-container
+    {
+        display: block;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    #contact-form-container
+    {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    #my-details-container
+    {
+        width: 90%;
+        padding: 1%;
+    }
+}
+/*Work Experience*/
+
+.timeline {
+    position: relative;
+    width: 75%;
+}
+
+.timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+
+.timeline-container {
+    padding: 8px;
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo > img {
+    width: 100%;
+}
+
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #0096fa6b;
+    height: 66%;
+    color: #433E3F;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+/*Resonsive experience*/
+
+@media screen and (max-width: 600px)
+{
+    #timeline-divider
+    {
+        left: 8%;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .timeline-box::after 
+    {
+        left: -6% !important;
+
+    }
+}
+@media screen and (max-width: 600px)
+{
+  html    
+   {
+    font-size: 15px;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .timeline-box
+    {
+        left: 12% !important;
+        width: 90%;
+    }
+}
+
+/*Extra classes*/
+.text-center
+{
+	text-align: center;
+}
+
+
